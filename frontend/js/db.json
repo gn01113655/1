@@ -1,0 +1,43 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "鍵盤",
+      "price": 600,
+      "qty": 15,
+      "note": "機械青軸，學生最愛"
+    },
+    {
+      "id": "2",
+      "name": "滑鼠",
+      "price": 499,
+      "qty": 30,
+      "note": "電競等級，耐摔"
+    },
+    {
+      "id": "3",
+      "name": "27吋螢幕",
+      "price": 3890,
+      "qty": 8,
+      "note": "IPS 面板，護眼模式"
+    },
+    {
+      "id": "4",
+      "name": "Type-C 充電線",
+      "price": 199,
+      "qty": 50,
+      "note": "1.5M 編織線，耐拉扯"
+    },
+    {
+      "id": "5",
+      "name": "USB 集線器",
+      "price": 350,
+      "qty": 20,
+      "note": "四孔高速傳輸"
+    }
+  ],
+  "user": [
+    { "id": "1", "username": "owner01", "password": "123456" },
+    { "id": "2", "username": "owner02", "password": "123456" }
+  ]
+}

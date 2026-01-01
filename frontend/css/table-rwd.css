@@ -1,0 +1,41 @@
+ @media screen and (max-width:768px) {
+            .table-rwd thead {
+                display: none;
+            }
+
+            .table-rwd tbody tr {
+                display: block;
+                border: 1px solid var(--color02);
+                margin-top: 15px;
+                border-radius: 5px;
+                box-shadow: 1px 2px 4px 2px var(--color02);
+            }
+
+            .table-rwd tbody td {
+                display: block;
+                overflow: hidden;
+            }
+
+            /* 使用偽裝元素 使用在td之前(::before) */
+            .table-rwd tbody td::before {
+                /* 取得偽裝元素的值 */
+                content: attr(data-th)" : ";
+                color: var(--color03);
+                font-weight: 900;
+                font-size: 18px;
+                display: block;
+                float: left;
+                width: 25%;
+                /* 偽元素字體靠右 */
+                text-align: right;
+                /* 與隔壁的明細拉出一點間隔 */
+                padding-left: 15px;
+            }
+        }
+
+        .table-rwd tbody tr td span {
+            display: block;
+            float: left;
+            width: 70%;
+            padding-left: 50px;
+        }

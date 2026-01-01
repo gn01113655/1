@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>熊屋居家空間設計</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/my.css">
+</head>
+
+<body>
+
+    <div class="">
+
+        <!-- ***************************s01 註冊登入區段**************************** -->
+        <section id="s02">
+            <nav class="navbar navbar-expand-lg bg-05 navbar-dark fixed-top custom-nav">
+                <div class="container">
+                    <a class="navbar-brand d-lg-none" href="#">
+                        <i class="fa-solid fa-paw fa-xl  text-white"></i>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">
+                                    <i class="fa-light fa-paw"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#" style="color: #333;">
+                                    <i class="fa-solid fa-house me-1"></i>首頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-1 " href="#s04" style="color: #333;">
+                                    <i class="fa-solid fa-address-card"></i>關於我們</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-1" href="#s11" style="color: #333;">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>公司沿革</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-1" href="#s05" style="color: #333;">
+                                    <i class="fas fa-pencil-alt"></i>設計理念</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-1" href="#s07" style="color: #333;">
+                                    <i class="fa-solid fa-people-group"></i>團隊成員</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" style="color: #333;">
+                                    <i class="fa-solid fa-list-check"></i>服務項目
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">空間設計</a></li>
+                                    <li><a class="dropdown-item" href="#">房間佈置</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">全屋風格規劃</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-1 " href="#s08" style="color: #333;">
+                                    <i class="fa-solid fa-lightbulb"></i>空間小知識</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-1" href="#s10" style="color: #333;">
+                                    <i class="fa-solid fa-briefcase"></i>加入我們</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <span class=" h3 me-2 d-none" id="s02-member-span">會員: <span
+                                    class="text-03 fw-900 h2">xxx</span></span>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginModal"
+                                id="s02-login-btn">
+                                <i class="fa-solid fa-user"></i>會員登入</button>
+                            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#registerModal"
+                                id="s02-register-btn">
+                                <i class="fa-solid fa-registered"></i>會員註冊</button>
+
+                            <button class="btn btn-danger d-none" id="s02-logout-btn">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i> 登出</button>
+
+                            <button class="btn btn-success d-none" id="s02-control-panel-btn"><i
+                                    class="fa-solid fa-address-card"></i> 會員管理</button>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+
+            <!-- registerModal 點註冊會彈出對話框-->
+            <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header text-bg-warning">
+                            <h1 class="modal-title fs-5 fw-900 text-white" id="exampleModalLabel">會員註冊</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- 利用偽元素畫一條中線 -->
+                            <div class="timeline-section">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="h3 fw-900">會員守則</div>
+                                        <p>1. 遵守平台規範：使用本服務時請遵循平台章程，保持友善與尊重。</p>
+                                        <p>2. 尊重他人權益：不得進行騷擾、歧視或影響其他會員使用權益之行為。</p>
+                                        <p>3. 維護良好環境：請共同維護社群秩序與設備安全，保持整潔。</p>
+                                        <p>4. 資料須正確：註冊與使用服務時，需提供真實且正確的個人資料。</p>
+                                        <p>5. 合理使用服務：使用任何平台資源時需依規定操作，不得破壞、濫用或攻擊系統。</p>
+                                        <p>6. 尊重個人隱私：不得未經許可蒐集、散布或使用其他會員之個人資訊。</p>
+                                        <p>7. 積極參與活動：鼓勵參加官方舉辦的活動，共同提升平台品質。</p>
+                                        <p>8. 違規責任：違反守則者，平台有權依規定進行警告、停權或取消會員資格。</p>
+                                        <div class="form-check">
+                                            <input type="checkbox" name="" id="" class="form-check-input">
+                                            <label for="" class="form-check-label">同意/不同意</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">帳號</label>
+                                            <input type="text" class="form-control is-invalid" id="r-username"
+                                                placeholder="帳號1-8字">
+                                            <div class="valid-feedback">帳號符合規定</div>
+                                            <div class="invalid-feedback">帳號不符合規定</div>
+                                            <div></div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">密碼</label>
+                                            <input type="password" class="form-control is-invalid" id="r-password">
+                                            <div class="valid-feedback">密碼符合規定</div>
+                                            <div class="invalid-feedback">密碼不符合規定</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">確認密碼</label>
+                                            <input type="password" class="form-control is-invalid"
+                                                id="r-retype-password" placeholder="重新確認密碼">
+                                            <div class="valid-feedback">密碼一致</div>
+                                            <div class="invalid-feedback">密碼不一致</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">Email</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary" id="r-btn-ok">確認</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- loginModal 點登入會彈出對話框-->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header text-bg-warning">
+                            <h1 class="modal-title fs-5 fw-900 text-white" id="exampleModalLabel">會員登入</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- 利用偽元素畫一條中線 -->
+                            <div class="row">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">帳號</label>
+                                    <input type="text" class="form-control" id="l-username" placeholder="帳號1-8字">
+                                    <div class="valid-feedback" id="r-username-valid-feedback">帳號符合規定</div>
+                                    <div class="invalid-feedback" id="r-username-invalid-feedback">帳號不符合規定</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">密碼</label>
+                                    <input type="password" class="form-control" id="l-password" placeholder="密碼1-8字">
+                                    <div class="valid-feedback">密碼符合規定</div>
+                                    <div class="invalid-feedback">密碼不符合規定</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="me-auto" data-bs-toggle="modal" data-bs-target="#loginModal">已有帳號</a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary" id="l-btn-ok">確認</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- s03 -->
+        <section id="s03">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                data-bs-interval="3000">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/room01.webp" class="d-block w-100 carousel-img " alt="">
+                        <div class="carousel-caption d-none d-md-block carousel-caption-text">
+                            <h5>打造屬於你的療癒空間，生活從此更美好。</h5>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/room06.webp" class="d-block w-100 carousel-img" alt="">
+                        <div class="carousel-caption d-none d-md-block carousel-caption-text">
+                            <h5>每一處細節，都為了讓房間更符合你的想像。</h5>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/room07webp.webp" class="d-block w-100 carousel-img" alt="">
+                        <div class="carousel-caption d-none d-md-block carousel-caption-text">
+                            <h5>把混亂變成秩序，把空間變成你喜歡的樣子。</h5>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/room08.webp" class="d-block w-100 carousel-img" alt="">
+                        <div class="carousel-caption d-none d-md-block carousel-caption-text">
+                            <h5>專業搭配色系與收納動線，讓房間煥然一新。</h5>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/room05.webp" class="d-block w-100 carousel-img" alt="">
+                        <div class="carousel-caption d-none d-md-block carousel-caption-text">
+                            <h5>在生活的角落，創造屬於你的風格與故事。</h5>
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- s04 v2 -->
+        <section id="s04">
+            <div class="">
+                <div class="row align-items-center">
+
+                    <div class="col-md-5 bg-cover d-none d-md-block"
+                        style="background-image: url(images/wood01.avif); height: 600px;">
+                    </div>
+
+                    <div class="col-md-7 p-5">
+
+                        <div class="h1 main-title">
+                            自西元2015年起，
+                            <span class="highlight">台灣第一家</span>
+                        </div>
+                        <div class="h1 main-title">專注於「居家房間佈置」的專業規劃團隊</div>
+
+                        <p class="mb-1">以專業美學、空間配置與貼心動線為核心，打造兼具質感與實用的居家生活體驗。</p>
+                        <p class="mb-1">從空間重塑、風格調整到完整改造，每個細節皆以精品級標準呈現。</p>
+                        <p class="mb-1">提供透明流程、專業建議與量身訂製的佈置方案，陪伴您實現理想的生活空間。</p>
+
+                        <div class="row mt-5">
+                            <div class="col-md-3 text-center">
+                                <div class="stat-label">年均服務量</div>
+                                <div class="stat-number counter01">
+                                    990 <span class="unit">件</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-center">
+                                <div class="stat-label">獲獎紀錄</div>
+                                <div class="stat-number counter02">
+                                    9 <span class="unit">項</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-center">
+                                <div class="stat-label">專業認證</div>
+                                <div class="stat-number counter03">
+                                    90 <span class="unit">項</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 text-center">
+                                <div class="stat-label">全台據點</div>
+                                <div class="stat-number counter04">
+                                    5 <span class="unit">個</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- S11 -->
+        <section id="s11">
+            <div class="bg-04 bg-cover">
+                <div class="text-white">
+
+                    <!-- 區塊標題 -->
+                    <div class="row mb-5 text-05">
+                        <div class="col-12 text-center">
+                            <h2>公司沿革</h2>
+                            <p>我們專注於房間風格設計，從概念到施工，打造符合客戶需求的舒適居家空間。</p>
+                        </div>
+                    </div>
+
+                    <!-- 時間軸 -->
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 timeline-section">
+
+                            <!-- 2015：左文字右年份 -->
+                            <div class="row align-items-center timeline-section-pointer s11-item s11-top">
+                                <div class="col-12 col-md-6 order-3 order-md-1 text-center text-md-start text-cover">
+                                    <h3>品牌創立</h3>
+                                    <p>公司成立，創立小型設計工作室，專注房間各式風格設計。</p>
+                                </div>
+                                <div class="col-12 col-md-5 order-2 order-md-2 d-flex justify-content-center">
+                                    <div class="year-placeholder h2 fw-bold text-05">2015</div>
+                                </div>
+                            </div>
+
+                            <div class="row align-items-center timeline-section-pointer s11-item s11-left">
+
+                                <!-- 年份（固定在時間軸中線） -->
+                                <div class="col-12 col-md-6 d-flex justify-content-center">
+                                    <div class="year-placeholder h2 fw-bold text-05">2017</div>
+                                </div>
+
+                                <!-- 文字（完全在右半邊，不可能壓線） -->
+                                <div class="col-12 col-md-6 text-center text-md-start text-cover ps-md-5">
+                                    <h3>團隊擴編</h3>
+                                    <p>新增設計師與施工管理人員，提高專案效率。</p>
+                                </div>
+
+                            </div>
+
+                            <!-- 2019 -->
+                            <div class="row align-items-center timeline-section-pointer s11-item s11-top">
+                                <div class="col-12 col-md-6 order-3 order-md-1 text-center text-md-start text-cover">
+                                    <h3>設計流程升級</h3>
+                                    <p>導入 3D 視覺化設計工具，提升與客戶溝通效率。</p>
+                                </div>
+                                <div class="col-12 col-md-5 order-2 order-md-2 d-flex justify-content-center">
+                                    <div class="year-placeholder h2 fw-bold text-05">2019</div>
+                                </div>
+                            </div>
+                            <!-- 2022 -->
+                            <div class="row align-items-center timeline-section-pointer s11-item s11-left">
+
+                                <div class="col-12 col-md-6 d-flex justify-content-center">
+                                    <div class="year-placeholder h2 fw-bold text-05">2022</div>
+                                </div>
+
+                                <div class="col-12 col-md-6 text-center text-md-start text-cover ps-md-5">
+                                    <h3>服務整合</h3>
+                                    <p>整合設計、選材與施工管理，提供一站式房間風格解決方案。</p>
+                                </div>
+
+                            </div>
+
+                            <!-- 2025 -->
+                            <div class="row align-items-center timeline-section-pointer s11-item s11-top">
+                                <div class="col-12 col-md-6 order-3 order-md-1 text-center text-md-start text-cover">
+                                    <h3>持續成長</h3>
+                                    <p>深耕多元房間風格設計，邁向更成熟、穩定的品牌發展。</p>
+                                </div>
+                                <div class="col-12 col-md-5 order-2 order-md-2 d-flex justify-content-center">
+                                    <div class="year-placeholder h2 fw-bold text-05">2025</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- END timeline -->
+                </div>
+            </div>
+        </section>
+
+        <!-- s05 設計理念-->
+        <section id="s05" class="py-5 bg-07" style="position: relative; background-color: #FFF4E1;">
+            <div class="">
+                <div class="row text-center">
+                    <h1 class="fw-bold text-dark">設計理念</h1>
+                    <!-- 01 客製化專屬設計 -->
+                    <div class="col-md-4 text-center">
+                        <i class="fa-solid fa-pencil-ruler process-1 mt-3 wow animate__animated animate__flip"
+                            data-wow-delay="0.2s"></i>
+                        <div class="h1 fw-900 mt-3">客製化專屬設計</div>
+                        <p class="mt-3">
+                            以客戶需求為核心，量身打造獨一無二的空間，讓每個細節都符合生活習慣與美感。
+                        </p>
+                    </div>
+
+                    <!-- 02 細節至上 -->
+                    <div class="col-md-4 text-center">
+                        <i class="fa-solid fa-magnifying-glass process-2 mt-3 wow animate__animated animate__flip"
+                            data-wow-delay="0.4s"></i>
+                        <div class="h1 fw-900 mt-3">細節至上</div>
+                        <p class="mt-3">
+                            對每個角落、材質、光影都精益求精，確保空間不只是好看，更是舒適與實用兼具。
+                        </p>
+                    </div>
+
+                    <!-- 03 溫暖居家體驗 -->
+                    <div class="col-md-4 text-center">
+                        <i class="fa-solid fa-couch process-3 mt-3 wow animate__animated animate__flip"
+                            data-wow-delay="0.6s"></i>
+                        <div class="h1 fw-900 mt-3">溫暖居家體驗</div>
+                        <p class="mt-3">
+                            讓每個設計空間兼具美感與舒適感，打造能讓家人放鬆與享受的理想居所。
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- section07 人物介紹 -->
+        <section id="s07" class="py-5">
+            <div class="">
+                <div class="section-title text-center mb-5">
+                    <h2 class="fw-bold text-dark">團隊成員</h2>
+                    <p class="text-secondary">一起把生活，慢慢設計好</p>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <div class="team-item d-flex align-items-start bg-white">
+                            <i class="fa-solid fa-user team-icon me-4"></i>
+                            <div>
+                                <h3 class="team-title text-dark">✦ 創意總監｜把生活過成設計</h3>
+                                <p class="team-text text-secondary">
+                                    負責決定整個空間的氣氛走向，也是團隊裡點子最多的人。從生活裡找靈感，把日常的習慣、喜好與感受融進設計中，讓家不只是好看，而是真的住起來舒服。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="team-item d-flex align-items-start bg-white">
+                            <i class="fa-solid fa-user team-icon me-4"></i>
+                            <div>
+                                <h3 class="team-title text-dark">✦ 資深設計師｜細節控的生活玩家</h3>
+                                <p class="team-text text-secondary">
+                                    最在意的，不只是畫面好不好看，而是用起來順不順。從顏色、材質到家具配置，每一個細節都會反覆確認，只為了讓空間耐看、耐住、也耐生活。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="team-item d-flex align-items-start bg-white">
+                            <i class="fa-solid fa-user team-icon me-4"></i>
+                            <div>
+                                <h3 class="team-title text-dark">✦ 設計顧問｜陪你一起想家的那個人</h3>
+                                <p class="team-text text-secondary">
+                                    擅長傾聽，也很會發問，負責把你的想法慢慢整理清楚。預算怎麼抓、風格怎麼選、空間怎麼分配，都有人一步步陪你討論，讓設計過程輕鬆又安心。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="team-item d-flex align-items-start bg-white">
+                            <i class="fa-solid fa-user team-icon me-4"></i>
+                            <div>
+                                <h3 class="team-title text-dark">✦ 3D 繪圖師｜先帶你走進未來的家</h3>
+                                <p class="team-text text-secondary">
+                                    在施工前，先讓你用「看的」感受空間有多舒服。透過立體畫面與光影模擬，把設計變得好理解、不抽象，讓你在動工之前，就已經開始期待回家。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- S13 服務流程 -->
+        <section id="s13" class="py-5">
+            <div class="">
+                <div class="row mb-4 text-center">
+                    <div class="col-12">
+                        <h1 class="fw-bold">設計流程</h1>
+                        <p class="h2">清楚、簡單、專業，從概念到完工，我們一步步為你打造理想空間</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-2 text-center process-step">
+                        <div class="step-number h1">1</div>
+                        <i class="fa-solid fa-comments fa-3x wow animate__animated animate__lightSpeedInLeft"
+                            data-wow-delay="0.5s"></i>
+                        <h2 class="fw-bold mt-2">諮詢需求</h2>
+                        <p class="h5">了解你的喜好、生活方式與需求</p>
+                    </div>
+                    <div class="col-md-2 text-center process-step">
+                        <div class="step-number h1">2</div>
+                        <i class="fa-solid fa-ruler-combined fa-3x mt-2 wow animate__animated animate__lightSpeedInLeft"
+                            data-wow-delay="0.5s"></i>
+                        <h2 class="fw-bold mt-2">空間規劃</h2>
+                        <p class="h5">提出設計概念與初步平面圖</p>
+                    </div>
+                    <div class="col-md-2 text-center process-step">
+                        <div class="step-number h1">3</div>
+                        <i class="fa-solid fa-leaf fa-3x mt-2 wow animate__animated animate__lightSpeedInLeft"
+                            data-wow-delay="0.5s"></i>
+                        <h2 class="fw-bold mt-2">材質選擇</h2>
+                        <p class="h5">挑選安全、天然、無毒的材料</p>
+                    </div>
+                    <div class="col-md-2 text-center process-step">
+                        <div class="step-number h1">4</div>
+                        <i class="fa-solid fa-hard-hat fa-3x mt-2 wow animate__animated animate__lightSpeedInLeft"
+                            data-wow-delay="0.5s"></i>
+                        <h2 class="fw-bold mt-2">施工監管</h2>
+                        <p class="h5">確保施工品質與進度，嚴格控管細節</p>
+                    </div>
+                    <div class="col-md-2 text-center process-step">
+                        <div class="step-number h1">5</div>
+                        <i class="fa-solid fa-check-circle fa-3x mt-2 wow animate__animated animate__lightSpeedInLeft"
+                            data-wow-delay="0.5s"></i>
+                        <h2 class="fw-bold mt-2">完工驗收</h2>
+                        <p class="h5">檢查每個細節，交付完美居家</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- S14 作品展示 -->
+        <section id="s14" class="py-5">
+            <div class="">
+                <div class="row mb-4 text-center">
+                    <div class="col-12">
+                        <h2 class="fw-bold">我們的作品</h2>
+                        <p>從設計到完成，每一個細節都是我們對品質的承諾</p>
+                    </div>
+                </div>
+
+                <!-- ✅ 作品列表 -->
+                <div class="row g-4">
+
+                    <!-- 作品 01 -->
+                    <div class="col-md-4">
+                        <div class="portfolio-overlay text-center">
+                            <h4 class="fw-bold">書房</h4>
+                            <p>思緒自在流動，靈感隨手可及的小天地。</p>
+                        </div>
+                        <div class="portfolio-card bg-cover"
+                            style="background-image: url('images/書房01.jpg'); height:360px;">
+
+                        </div>
+                    </div>
+
+                    <!-- 作品 02 -->
+                    <div class="col-md-4">
+                        <div class="portfolio-overlay text-center">
+                            <h4 class="fw-bold">兒童房</h4>
+                            <p>小小空間，大大想像，陪孩子開心成長。</p>
+                        </div>
+                        <div class="portfolio-card bg-cover"
+                            style="background-image: url('images/兒童房01.webp'); height:360px;">
+                        </div>
+                    </div>
+
+                    <!-- 作品 03 -->
+                    <div class="col-md-4">
+                        <div class="portfolio-overlay text-center">
+                            <h4 class="fw-bold">寵物房</h4>
+                            <p>人與寵物，一起住得剛剛好</p>
+                        </div>
+                        <div class="portfolio-card bg-cover"
+                            style="background-image: url('images/寵物房.jpg'); height:360px;">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- S15 客戶好評回饋 -->
+        <section id="s15" class="py-5">
+            <div class="container">
+
+                <!-- 標題 -->
+                <div class="row mb-5 text-center">
+                    <div class="col-12">
+                        <h1 class="fw-bold">客戶怎麼說</h1>
+                        <p class="text-secondary">
+                            每一次設計，都是一段真實生活的開始
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 回饋卡片 -->
+                <div class="row g-4">
+
+                    <!-- 回饋 01 -->
+                    <div class="col-md-4 fade-slide">
+                        <div class="p-4 bg-white h-100 shadow-sm rounded">
+                            <i class="fa-solid fa-quote-left text-warning fa-2x mb-3"></i>
+                            <p>
+                                從一開始的討論就非常安心，設計師真的很懂我們的生活習慣，
+                                完工後每天回家都覺得心情變好了。
+                            </p>
+                            <div class="mt-3 fw-bold">— 張小姐｜主臥改造</div>
+                        </div>
+                    </div>
+
+                    <!-- 回饋 02 -->
+                    <div class="col-md-4 fade-slide">
+                        <div class="p-4 bg-white h-100 shadow-sm rounded">
+                            <i class="fa-solid fa-quote-left text-warning fa-2x mb-3"></i>
+                            <p>
+                                小孩房間設計得很有彈性，收納、動線都很實用，
+                                孩子自己也更願意整理房間了。
+                            </p>
+                            <div class="mt-3 fw-bold">— 林先生｜兒童房設計</div>
+                        </div>
+                    </div>
+
+                    <!-- 回饋 03 -->
+                    <div class="col-md-4 fade-slide">
+                        <div class="p-4 bg-white h-100 shadow-sm rounded">
+                            <i class="fa-solid fa-quote-left text-warning fa-2x mb-3"></i>
+                            <p>
+                                原本只是想整理房間，沒想到整個生活品質都提升了，
+                                很慶幸當初選擇你們團隊。
+                            </p>
+                            <div class="mt-3 fw-bold">— 陳小姐｜整體空間規劃</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CTA -->
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <a href="#s09" class="btn btn-warning px-5 py-2">
+                            我也想諮詢看看
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section06-->
+        <section id="s06" style="position: relative;">
+            <div class="">
+                <div class="row">
+                    <div class="col-md-5 bg-cover s06-text"
+                        style="position: absolute;top: 0;bottom: 0;background-image: url(images/wood2.avif);"></div>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="col-md-7 s06-text s06-animate">
+                        <div class="h2 text-03 fw-900 text-center my-3">為生活留下溫度的空間設計</div>
+                        <p>
+                            我們相信，好的設計不喧嘩，而是靜靜融入日常。
+                            從動線、比例到材質選擇，我們專注於讓空間耐看、好用，並陪伴生活走得更久。
+                        </p>
+                        <button class="btn btn-warning">了解我們</button>
+                        <div class="row">
+                            <div class="col-md-6 s06-animate s06-delay-1">
+                                <div class="h2 text-03 fw-900 text-center my-3">選材，從安心開始</div>
+                                <p>
+                                    我們重視材料的安全性與耐用度，
+                                    堅持使用來源清楚、對居住者友善的用料，
+                                    讓家的每一次使用都值得信賴。
+                                </p>
+                            </div>
+                            <div class="col-md-6 s06-animate s06-delay-2">
+                                <div class="h2 text-03 fw-900 text-center my-3">對環境，也負責任</div>
+                                <p>
+                                    設計不只關乎美感，也關乎選擇。
+                                    我們透過減量設計與低污染製程，
+                                    為空間留下美，也為環境多留一份善意。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section13 房間風格輪播 -->
+        <section class="bg-04">
+            <div class="py-5">
+                <div class="d-flex justify-content-center align-items-end mb-4 position-relative">
+
+                    <!-- 中間標題置中 -->
+                    <div class="text-center">
+                        <div class="text-uppercase text-warning mb-1" style="letter-spacing: 1px; font-size: 2rem;">
+                            打造專屬於你的空間
+                        </div>
+                        <div class="fw-900 product-section-title h3"
+                            style="font-size: 2rem; line-height: 1.2; color: #333;">
+                            人氣房間風格
+                        </div>
+                    </div>
+
+                    <!-- 右邊連結固定在右側 -->
+                    <a href="#" class="text-decoration-none small position-absolute end-0"
+                        style="font-size: 0.85rem; color: #555;">
+                        查看全部方案<i class="fa-solid fa-arrow-right-long ms-2"></i>
+                    </a>
+                </div>
+
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
+                    data-bs-interval="3000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row g-3 text-center">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="product-card mb-2">
+                                        <img src="images/現代風02.png" alt="" class="w-100 rounded">
+                                    </div>
+                                    <div class="fs-5 fw-900 mb-1">現代風格</div>
+                                    <div class="fs-6">簡約線條與明亮色彩，打造舒適現代空間</div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="product-card mb-2">
+                                        <img src="images/工業風02.png" alt="" class="w-100 rounded">
+                                    </div>
+                                    <div class="fs-5 fw-900 mb-1">工業風格</div>
+                                    <div class="fs-6">裸露材質與金屬元素，營造硬朗個性氛圍</div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="product-card mb-2">
+                                        <img src="images/北歐風02.jpg" alt="" class="w-100 rounded">
+                                    </div>
+                                    <div class="fs-5 fw-900 mb-1">北歐風格</div>
+                                    <div class="fs-6">明亮簡潔、自然木質與柔和色彩的舒適空間</div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="product-card mb-2">
+                                        <img src="images/簡約風02.webp" alt="" class="w-100 rounded">
+                                    </div>
+                                    <div class="fs-5 fw-900 mb-1">簡約風格</div>
+                                    <div class="fs-6">線條乾淨，減去多餘裝飾，打造平靜優雅空間</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <div class="row g-3 text-center">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="product-card mb-2">
+                                        <img src="images/無印日風01.png" alt="" class="w-100 rounded">
+                                    </div>
+                                    <div class="fs-5 fw-900 mb-1">無印日風</div>
+                                    <div class="fs-6">自然材質與簡單色調，打造舒適生活感</div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="product-card mb-2">
+                                        <img src="images/鄉村風01.png" alt="" class="w-100 rounded">
+                                    </div>
+                                    <div class="fs-5 fw-900 mb-1">鄉村風格</div>
+                                    <div class="fs-6">溫暖木質與花卉元素，帶來自然愜意氛圍</div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="product-card mb-2">
+                                        <img src="images/復古風01.png" alt="" class="w-100 rounded">
+                                    </div>
+                                    <div class="fs-5 fw-900 mb-1">復古風格</div>
+                                    <div class="fs-6">懷舊家具與復古配件，帶來獨特懷舊感</div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="product-card mb-2">
+                                        <img src="images/公主風01.png" alt="" class="w-100 rounded">
+                                    </div>
+                                    <div class="fs-5 fw-900 mb-1">公主風格</div>
+                                    <div class="fs-6">粉色浪漫與精緻裝飾，打造甜美夢幻氛圍</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-item">
+                            <div class="row g-3 text-center">
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="product-card mb-2">
+                                        <img src="images/海洋風02.jpg" alt="" class="w-100 rounded">
+                                    </div>
+                                    <div class="fs-5 fw-900 mb-1">海洋風格</div>
+                                    <div class="fs-6">藍白色調與海洋元素，營造清新舒心感</div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="product-card mb-2">
+                                        <img src="images/波西米亞風.jpg" alt="" class="w-100 rounded">
+                                    </div>
+                                    <div class="fs-5 fw-900 mb-1">波西米亞風</div>
+                                    <div class="fs-6">豐富色彩與異國元素，充滿自由隨性氣息</div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="product-card mb-2">
+                                        <img src="images/地中海01.jpg" alt="" class="w-100 rounded">
+                                    </div>
+                                    <div class="fs-5 fw-900 mb-1">地中海風</div>
+                                    <div class="fs-6">白藍搭配與自然材質，彷彿置身海岸度假</div>
+                                </div>
+                                <div class="col-sm-6 col-md-3">
+                                    <div class="product-card mb-2">
+                                        <img src="images/簡約韓風01.jpg" alt="" class="w-100 rounded">
+                                    </div>
+                                    <div class="fs-5 fw-900 mb-1">簡約韓風</div>
+                                    <div class="fs-6">柔和色調與簡單家具，營造舒適清新氛圍</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- section08:價格服務介紹 字在前圖在後-->
+        <section id="s08"
+            style="position: relative; background-color: #FFF4E1; font-family: 'Noto Sans TC', sans-serif; color: #6B4F3F;">
+
+            <div class="py-5">
+
+
+                <div class="row justify-content-start">
+                    <div class="col-md-7">
+                        <h2 class="fw-bold mb-5 text-center"
+                            style="color:#8B5E3C; font-size:2.3rem; letter-spacing:1px;">
+                            提升房間質感的 4 個小秘訣
+                        </h2>
+                        <dl class="row mt-3" style="font-size:1.1rem; line-height:1.8; text-align:center;">
+
+                            <dt class="col-12 fw-bold mb-2" style="font-size:1.3rem;">① 柔和光線最能放鬆</dt>
+                            <dd class="col-12 mb-4">
+                                <p>使用 3300K 以下暖色燈光，讓臥室更舒適、不刺眼。</p>
+                            </dd>
+
+                            <dt class="col-12 fw-bold mb-2" style="font-size:1.3rem;">② 乾淨收納讓空間更舒心</dt>
+                            <dd class="col-12 mb-4">
+                                <p>保持動線整潔，讓房間視覺更有秩序感。</p>
+                            </dd>
+
+                            <dt class="col-12 fw-bold mb-2" style="font-size:1.3rem;">③ 適度留白，氛圍更放鬆</dt>
+                            <dd class="col-12 mb-4">
+                                <p>牆面與地面不需太複雜，留白能提升房間質感。</p>
+                            </dd>
+
+                            <dt class="col-12 fw-bold mb-2" style="font-size:1.3rem;">④ 天花板保持簡潔</dt>
+                            <dd class="col-12 mb-4">
+                                <p>使用明亮、低飽和度色系，避免壓迫感更顯寬敞。</p>
+                            </dd>
+
+                        </dl>
+
+                    </div>
+                </div>
+
+                <!-- 右側背景圖 -->
+                <div class="row justify-content-end">
+                    <div class="col-md-5 bg-cover s08-bg"
+                        style="position: absolute; top: 0; bottom: 0; background-image: url(images/wood04.avif); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section09:地址和基本資料詢問-->
+        <section id="s09">
+            <div class="">
+                <div class="row">
+                    <h1 class="d-flex justify-content-center mb-5">客戶諮詢</h1>
+                    <div class="col-md-6">
+
+                        <!-- Google Map -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14560.136803393192!2d120.5910685871582!3d24.1705333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e048d342aa9%3A0x2b6f18a6783fa3b!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5Lit5b2w5oqV5YiG572y77yI6Ie65Lit6IG36KiT5bGA77yJ!5e0!3m2!1szh-TW!2stw!4v1764571286449!5m2!1szh-TW!2stw"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">客戶姓名</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">連絡電話</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <select class="form-select form-select-lg">
+                                <option disabled selected>---預算金額---</option>
+                                <option>1萬以內(精緻方案)</option>
+                                <option>1 - 5萬(經典方案)</option>
+                                <option>5 - 10萬(豪華方案)</option>
+                                <option>10萬以上(頂級方案)</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <select class="form-select form-select-lg">
+                                <option disabled selected>---房間類型---</option>
+                                <option>客房</option>
+                                <option>書房</option>
+                                <option>主臥室</option>
+                                <option>兒童房</option>
+                                <option>更衣間</option>
+                                <option>遊戲區</option>
+                                <option>寵物房</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <select id="s09-city" class="form-select form-select-lg">
+                                <option disabled selected>---所在地區---</option>
+                            </select>
+                        </div>
+
+                        <div class="my-4 text-center">
+                            <button class="btn btn-primary">確認送出</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section10 徵才公告-->
+        <section id="s10">
+            <div class="row">
+
+                <div class="col-md-6 bg-cover" style="background-image: url(images/3D繪圖師03.jpg);height: 360px;">
+                    <div class="row">
+                        <div class="col-md-7 s10-text ms-4 mt-5 slide-left">
+                            <small class="text-bg-danger badge">加入我們</small>
+                            <div class="text-white">
+                                <div class="h3">徵求空間設計師一名</div>
+                                <p>薪資待遇:面議</p>
+                                <p>工作內容:</p>
+                                <ul>
+                                    <li>依據顧客需求規劃房間整體風格設計</li>
+                                    <li>提供色彩、家具、燈光與軟裝搭配建議</li>
+                                    <li>打造兼具美感與實用的理想居住空間</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger">徵求工作</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6"
+                    style="background-image: url(images/設計助理01.png);height: 360px; background-position: left 30%; background-size: cover;">
+                    <div class="row justify-content-end">
+                        <div class="col-md-7 s10-text ms-4 mt-5 slide-right">
+                            <small class="text-bg-danger badge">加入我們</small>
+                            <div class="text-white">
+                                <div class="h3">徵求設計助理一名</div>
+                                <p>薪資待遇:面議</p>
+                                <p>工作內容:</p>
+                                <ul>
+                                    <li>與設計師一起參與空間規劃與風格發想</li>
+                                    <li>協助整理設計資料，讓創意順利落實</li>
+                                    <li>從實務中學習設計流程，累積實戰經驗</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn btn-outline-danger">徵求工作</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- section12 友善連結-->
+        <!-- section12 聯絡資訊 / Footer -->
+        <section id="s12">
+            <div class="bg-08 text-white py-4 text-bg-warning">
+                <div class=" text-center">
+                    <!-- 公司資訊 -->
+                    <p class="mb-1">© 2025 熊屋居家空間設計公司｜All Rights Reserved</p>
+
+                    <!-- 聯絡資訊 -->
+                    <p class="mb-1">
+                        <i class="fa-solid fa-phone me-2"></i> 04-1234-5678 &nbsp; | &nbsp;
+                        <i class="fa-solid fa-envelope me-2"></i> info@homedesign.com.tw &nbsp; | &nbsp;
+                        <i class="fa-solid fa-location-dot me-2"></i> 台中市西區設計路123號
+                    </p>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ***************************s01 社群連結**************************** -->
+        <section id="s01" class=" py-3 bg-08">
+            <div class="container">
+                <div class="d-flex  align-items-center">
+                    <div class="d-flex gap-3">
+                        <a href="#" class="">
+                            <i class="fa-brands fa-square-facebook fa-2x text-white"></i>
+                        </a>
+                        <a href="#" class="">
+                            <i class="fa-brands fa-square-instagram fa-2x text-white"></i>
+                        </a>
+                        <a href="#" class="">
+                            <i class="fa-brands fa-line fa-2x text-white"></i>
+                        </a>
+                        <a href="#" class="">
+                            <i class="fa-brands fa-square-twitter fa-2x text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 右下方回表頭按鈕 -->
+    <button id="backToTop" class="btn-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/city.js"></script>
+    <script src="js/backtotop.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script type="module" src="js/scroll-animate.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
