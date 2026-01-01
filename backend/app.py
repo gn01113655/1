@@ -8,7 +8,7 @@ import os
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="../frontend", static_url_path="/")
 CORS(app)  # 允許前端串接API
 
 # mysql連線
@@ -60,10 +60,9 @@ def get_current_user_from_request():
     return user
 
 # =============================#
-#測試用首頁
 @app.route("/")
-def home():
-    return "Flask API is running"
+def index():
+    return app.send_static_file("index.html")
 
 # =====================================================================#
 # 註冊帳號密碼
@@ -416,8 +415,6 @@ def admin_delete_user_restful(user_id):
 # =================================#
 # 主程式
 if __name__ == "__main__":
-    app.run(
-    host="0.0.0.0",
-    port=5000,
-    debug=True
-)
+    # Render 會提供 PORT 環境變數
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)

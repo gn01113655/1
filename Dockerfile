@@ -1,12 +1,15 @@
-FROM python:3.11-slim
+
+FROM python:3.10-slim
+
 
 WORKDIR /app
 
-COPY backend/requirements.txt ./backend/
+COPY backend/ ./backend
+
 RUN pip install --no-cache-dir -r backend/requirements.txt
 
-COPY . .
+COPY frontend/ ./frontend
 
-EXPOSE 5000
+ENV PORT=5000
 
-CMD ["python", "app.py"]
+CMD ["python", "backend/app.py"]
